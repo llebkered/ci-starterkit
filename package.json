@@ -9,6 +9,7 @@
   "author": "Derek Bell",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4"
   }
 }
