@@ -1,11 +1,10 @@
 var gulp = require('gulp');
+var gutil    = require('gulp-util');
 
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 
-gulp.task('default', function() {
-  // place code for your default task here
-});
+
 
 
 /*
@@ -41,4 +40,9 @@ gulp.task('sass', function () {
         cascade: false
         }))
     .pipe(gulp.dest('assets/css'));
+});
+
+
+gulp.task('default', function() {
+  // place code for your default task here
 });
