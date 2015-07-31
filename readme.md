@@ -14,7 +14,20 @@ This is a bare bones set up for a website using Codeigniter and HTML5 boilerplat
 
 ### Bourbon, Neat and Bitters
 
-This template uses Bourbon http://http://bourbon.io/, Bitters http://bitters.bourbon.io/ and Neat http://neat.bourbon.io/ as a base for the SASS. It uses normalize.css as the reset
+This template uses Bourbon http://http://bourbon.io/, Bitters http://bitters.bourbon.io/ and Neat http://neat.bourbon.io/ as a base for the SASS.
+
+* SASS files live in /assets/sass
+* Added some extra variables in /assets/base/_variables.scss for headings.
+* Added heading size variables to /assets/base/_typography.scss
+* Commented out resets in /assets/base/_lists.scss
+
+### Codeigniter
+
+There is a bare bones Codeigniter installation to handle the backend.
+
+Moved views
+
+It uses normalize.css as the reset
 
 ## File Structure
 <code>
