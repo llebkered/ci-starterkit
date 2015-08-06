@@ -11,7 +11,10 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
+    "gulp-imagemin": "^2.3.0",
     "gulp-sass": "^2.0.4",
-    "gulp-util": "^3.0.6"
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.3.4",
+    "imagemin-pngquant": "^4.1.2"
   }
 }

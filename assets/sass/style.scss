@@ -5,14 +5,21 @@
 
 //@import "compass/reset";
 
+// Normalize
 @import "normalize";
 
+// Bourbon, Bitters & Neat
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
 
+// Layout
 @import "layout";
 @import "header";
 @import "content";
 @import "aside";
 @import "footer";
+
+
+// Page styles
+.test { display:flex; }
