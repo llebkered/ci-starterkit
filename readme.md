@@ -1,8 +1,8 @@
-# Starter Project for Base Web site template
+# Starter project for base web site template
 
-V 1.0.1
+V 1.0.2
 
-This is a bare bones set up for a website using Codeigniter and HTML5 boilerplate.
+This is a bare bones set up for a website using Codeigniter and HTML5 boilerplate. Contains a simple controller for a static site.
 
 ## Contains
 * Bourbon http://http://bourbon.io/, Bitters http://bitters.bourbon.io/ and Neat http://neat.bourbon.io/.
@@ -28,6 +28,8 @@ This template uses Bourbon http://http://bourbon.io/, Bitters http://bitters.bou
 There is a bare bones Codeigniter installation to handle the backend.
 
 * Moved views folder out to the top level and changed the name to public.
+* Pages class load header, content and footer views.
+* Contains base home & about views in the public/pages folder. You can add extra static views here.
 
 ### Compass
 
@@ -46,12 +48,14 @@ Used as a starter for the html template
 
 ### Modernizr
 
+The same version that comes with HTML5 Boilerplate. You may want to get a custom build from [Modernir](http://modernizr.com/).
+
 ### Normalize
 
-It uses normalize.css as the reset
+It uses normalize.css as the reset.
 
 ### SASS
-
+You can use either Compass or Gulp to compile the SASS.
 
 
 ## File Structure
