@@ -12,7 +12,7 @@ class Pages extends CI_Controller {
         $data['title'] = "CI3 Test";
 
 
-        if (  file_exists(APPPATH.'/views/pages/'.$page.'.php'))
+        if (  file_exists('public/pages/'.$page.'.php'))  //APPPATH.'/views/pages/'.$page.'.php'
         {
             $data['title'] = ucfirst($page); // Capitalize the first letter
 
