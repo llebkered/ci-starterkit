@@ -1,6 +1,6 @@
 # Starter project for base web site template
 
-V 1.0.2
+V 1.1.0
 
 This is a bare bones set up for a website using Codeigniter and HTML5 boilerplate. Contains a simple controller for a static site.
 
@@ -13,6 +13,7 @@ This is a bare bones set up for a website using Codeigniter and HTML5 boilerplat
 * Modernizr http://modernizr.com/
 * Normalize.css  https://necolas.github.io/normalize.css/
 * SASS http://sass-lang.com/
+* SMACSS https://smacss.com/
 
 ### Bourbon, Neat and Bitters
 
@@ -57,9 +58,14 @@ It uses normalize.css as the reset.
 ### SASS
 You can use either Compass or Gulp to compile the SASS.
 
+### SMACSS
+Based on Mina Markham's Sassy Starter
+https://github.com/minamarkham/sassy-starter
+
 
 ## File Structure
-<code>
+
+```
 application
 assets
 -- cache
@@ -71,4 +77,4 @@ node_modules
 package.json
 public
 system
-</code>
+```
