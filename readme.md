@@ -72,7 +72,7 @@ assets
 -- config
 -- controllers
 index.php
-gulfile.js
+gulpfile.js
 node_modules
 package.json
 public
