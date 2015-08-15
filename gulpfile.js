@@ -55,6 +55,7 @@ gulp.task('sass', function() {
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
       cascade: true
     }))
+    // Minify CSS
     .pipe(csso())
     .pipe(gulp.dest('assets/css'));
 });
