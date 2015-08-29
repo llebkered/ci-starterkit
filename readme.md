@@ -1,4 +1,4 @@
-# Starter project for base web site template
+# Starter project for CodeIgniter base web site template
 
 V 1.1.0
 
