@@ -779,7 +779,7 @@ class CI_Image_lib {
 			$this->y_axis = 0;
 		}
 
-		//  Create the image handle
+		// Create the image handle
 		if ( ! ($src_img = $this->image_create_gd()))
 		{
 			return FALSE;
@@ -845,7 +845,7 @@ class CI_Image_lib {
 	 */
 	public function image_process_imagemagick($action = 'resize')
 	{
-		//  Do we have a vaild library path?
+		// Do we have a vaild library path?
 		if ($this->library_path === '')
 		{
 			$this->set_error('imglib_libpath_invalid');
@@ -1010,7 +1010,7 @@ class CI_Image_lib {
 		// going to have to figure out how to determine the color
 		// of the alpha channel in a future release.
 
-		$white	= imagecolorallocate($src_img, 255, 255, 255);
+		$white = imagecolorallocate($src_img, 255, 255, 255);
 
 		// Rotate it!
 		$dst_img = imagerotate($src_img, $this->rotation_angle, $white);
@@ -1055,8 +1055,11 @@ class CI_Image_lib {
 
 		if ($this->rotation_angle === 'hor')
 		{
-			for ($i = 0; $i < $height; $i++, $left = 0, $right = $width-1)
+			for ($i = 0; $i < $height; $i++)
 			{
+				$left = 0;
+				$right = $width - 1;
+
 				while ($left < $right)
 				{
 					$cl = imagecolorat($src_img, $left, $i);
@@ -1072,18 +1075,21 @@ class CI_Image_lib {
 		}
 		else
 		{
-			for ($i = 0; $i < $width; $i++, $top = 0, $bot = $height-1)
+			for ($i = 0; $i < $width; $i++)
 			{
-				while ($top < $bot)
+				$top = 0;
+				$bottom = $height - 1;
+
+				while ($top < $bottom)
 				{
 					$ct = imagecolorat($src_img, $i, $top);
-					$cb = imagecolorat($src_img, $i, $bot);
+					$cb = imagecolorat($src_img, $i, $bottom);
 
 					imagesetpixel($src_img, $i, $top, $cb);
-					imagesetpixel($src_img, $i, $bot, $ct);
+					imagesetpixel($src_img, $i, $bottom, $ct);
 
 					$top++;
-					$bot--;
+					$bottom--;
 				}
 			}
 		}
@@ -1189,7 +1195,7 @@ class CI_Image_lib {
 			$x_axis += $this->orig_width - $wm_width;
 		}
 
-		//  Build the finalized image
+		// Build the finalized image
 		if ($wm_img_type === 3 && function_exists('imagealphablending'))
 		{
 			@imagealphablending($src_img, TRUE);
@@ -1431,7 +1437,7 @@ class CI_Image_lib {
 
 		switch ($image_type)
 		{
-			case 1 :
+			case 1:
 				if ( ! function_exists('imagecreatefromgif'))
 				{
 					$this->set_error(array('imglib_unsupported_imagecreate', 'imglib_gif_not_supported'));
@@ -1439,7 +1445,7 @@ class CI_Image_lib {
 				}
 
 				return imagecreatefromgif($path);
-			case 2 :
+			case 2:
 				if ( ! function_exists('imagecreatefromjpeg'))
 				{
 					$this->set_error(array('imglib_unsupported_imagecreate', 'imglib_jpg_not_supported'));
@@ -1447,7 +1453,7 @@ class CI_Image_lib {
 				}
 
 				return imagecreatefromjpeg($path);
-			case 3 :
+			case 3:
 				if ( ! function_exists('imagecreatefrompng'))
 				{
 					$this->set_error(array('imglib_unsupported_imagecreate', 'imglib_png_not_supported'));
