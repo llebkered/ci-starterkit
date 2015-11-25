@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Change Log &mdash; CodeIgniter 3.0.2 documentation</title>
+  <title>Change Log &mdash; CodeIgniter 3.0.3 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.2 documentation" href="index.html"/>
+    <link rel="top" title="CodeIgniter 3.0.3 documentation" href="index.html"/>
         <link rel="next" title="The MIT License (MIT)" href="license.html"/>
         <link rel="prev" title="Developer’s Certificate of Origin 1.1" href="DCO.html"/> 
 
@@ -422,6 +422,36 @@
             
   <div class="section" id="change-log">
 <h1>Change Log<a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="version-3-0-3">
+<h2>Version 3.0.3<a class="headerlink" href="#version-3-0-3" title="Permalink to this headline">¶</a></h2>
+<p>Release Date: October 31, 2015</p>
+<ul class="simple">
+<li><strong>Security</strong><ul>
+<li>Fixed an XSS attack vector in <a class="reference internal" href="libraries/security.html"><em>Security Library</em></a> method <tt class="docutils literal"><span class="pre">xss_clean()</span></tt>.</li>
+<li>Changed <a class="reference internal" href="libraries/config.html"><em>Config Library</em></a> method <tt class="docutils literal"><span class="pre">base_url()</span></tt> to fallback to <tt class="docutils literal"><span class="pre">$_SERVER['SERVER_ADDR']</span></tt> when <tt class="docutils literal"><span class="pre">$config['base_url']</span></tt> is empty in order to avoid <em>Host</em> header injections.</li>
+<li>Changed <a class="reference internal" href="helpers/captcha_helper.html"><em>CAPTCHA Helper</em></a> to use the operating system&#8217;s PRNG when possible.</li>
+</ul>
+</li>
+<li>Database<ul>
+<li>Optimized <a class="reference internal" href="database/utilities.html"><em>Database Utility</em></a> method <tt class="docutils literal"><span class="pre">csv_from_result()</span></tt> for speed with larger result sets.</li>
+<li>Added proper return values to <a class="reference internal" href="database/transactions.html"><em>Database Transactions</em></a> method <tt class="docutils literal"><span class="pre">trans_start()</span></tt>.</li>
+</ul>
+</li>
+</ul>
+<div class="section" id="bug-fixes-for-3-0-3">
+<h3>Bug fixes for 3.0.3<a class="headerlink" href="#bug-fixes-for-3-0-3" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Fixed a bug (#4170) - <a class="reference internal" href="database/index.html"><em>Database</em></a> method <tt class="docutils literal"><span class="pre">insert_id()</span></tt> could return an identity from the wrong scope with the &#8216;sqlsrv&#8217; driver.</li>
+<li>Fixed a bug (#4179) - <a class="reference internal" href="libraries/sessions.html"><em>Session Library</em></a> doesn&#8217;t properly maintain its state after ID regeneration with the &#8216;database&#8217; driver on PHP7.</li>
+<li>Fixed a bug (#4173) - <a class="reference internal" href="database/forge.html"><em>Database Forge</em></a> method <tt class="docutils literal"><span class="pre">add_key()</span></tt> didn&#8217;t allow creation of non-PRIMARY composite keys after the &#8220;bugfix&#8221; for #3968.</li>
+<li>Fixed a bug (#4171) - <a class="reference internal" href="database/transactions.html"><em>Database Transactions</em></a> didn&#8217;t work with nesting in methods <tt class="docutils literal"><span class="pre">trans_begin()</span></tt>, <tt class="docutils literal"><span class="pre">trans_commit()</span></tt>, <tt class="docutils literal"><span class="pre">trans_rollback()</span></tt>.</li>
+<li>Fixed a bug where <a class="reference internal" href="database/transactions.html"><em>Database Transaction</em></a> methods <tt class="docutils literal"><span class="pre">trans_begin()</span></tt>, <tt class="docutils literal"><span class="pre">trans_commit()</span></tt>, <tt class="docutils literal"><span class="pre">trans_rollback()</span></tt> ignored failures.</li>
+<li>Fixed a bug where all <a class="reference internal" href="database/transactions.html"><em>Database Transaction</em></a> methods returned TRUE while transactions are actually disabled.</li>
+<li>Fixed a bug where <a class="reference internal" href="general/common_functions.html"><em>common function</em></a> <a class="reference internal" href="general/common_functions.html#html_escape" title="html_escape"><tt class="xref php php-func docutils literal"><span class="pre">html_escape()</span></tt></a> modified keys of its array inputs.</li>
+<li>Fixed a bug (#4192) - <a class="reference internal" href="libraries/email.html"><em>Email Library</em></a> wouldn&#8217;t always have proper Quoted-printable encoding due to a bug in PHP&#8217;s own <tt class="docutils literal"><span class="pre">mb_mime_encodeheader()</span></tt> function.</li>
+</ul>
+</div>
+</div>
 <div class="section" id="version-3-0-2">
 <h2>Version 3.0.2<a class="headerlink" href="#version-3-0-2" title="Permalink to this headline">¶</a></h2>
 <p>Release Date: October 8, 2015</p>
@@ -3672,7 +3702,7 @@ and fixed various typos.</li>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 08, 2015.
+      Last updated on Oct 31, 2015.
     </p>
   </div>
 
@@ -3693,7 +3723,7 @@ and fixed various typos.</li>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'3.0.2',
+            VERSION:'3.0.3',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  false
