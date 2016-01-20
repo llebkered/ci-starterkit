@@ -184,6 +184,7 @@ class CI_DB_odbc_driver extends CI_DB {
 		}
 
 		return FALSE;
+<<<<<<< HEAD
 	}
 
 	// --------------------------------------------------------------------
@@ -202,6 +203,8 @@ class CI_DB_odbc_driver extends CI_DB {
 		}
 
 		return parent::is_write_type($sql);
+=======
+>>>>>>> d87d58409488fbddb0801e032d8d2a217bc6b40f
 	}
 
 	// --------------------------------------------------------------------

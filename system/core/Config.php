@@ -90,6 +90,7 @@ class CI_Config {
 		{
 			if (isset($_SERVER['SERVER_ADDR']))
 			{
+<<<<<<< HEAD
 				if (strpos($_SERVER['SERVER_ADDR'], ':') !== FALSE)
 				{
 					$server_addr = '['.$_SERVER['SERVER_ADDR'].']';
@@ -100,6 +101,9 @@ class CI_Config {
 				}
 
 				$base_url = (is_https() ? 'https' : 'http').'://'.$server_addr
+=======
+				$base_url = (is_https() ? 'https' : 'http').'://'.$_SERVER['SERVER_ADDR']
+>>>>>>> d87d58409488fbddb0801e032d8d2a217bc6b40f
 					.substr($_SERVER['SCRIPT_NAME'], 0, strpos($_SERVER['SCRIPT_NAME'], basename($_SERVER['SCRIPT_FILENAME'])));
 			}
 			else

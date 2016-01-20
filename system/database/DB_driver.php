@@ -682,8 +682,18 @@ abstract class CI_DB_driver {
 					$this->trans_complete();
 					if ($trans_depth === $this->_trans_depth)
 					{
+<<<<<<< HEAD
 						log_message('error', 'Database: Failure during an automated transaction commit/rollback!');
 						break;
+=======
+						$trans_depth = $this->_trans_depth;
+						$this->trans_complete();
+						if ($trans_depth === $this->_trans_depth)
+						{
+							log_message('error', 'Database: Failure during an automated transaction commit/rollback!');
+							break;
+						}
+>>>>>>> d87d58409488fbddb0801e032d8d2a217bc6b40f
 					}
 				}
 

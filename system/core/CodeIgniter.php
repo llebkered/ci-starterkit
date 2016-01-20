@@ -55,7 +55,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @var	string
  *
  */
+<<<<<<< HEAD
 	define('CI_VERSION', '3.0.4');
+=======
+	define('CI_VERSION', '3.0.3');
+>>>>>>> d87d58409488fbddb0801e032d8d2a217bc6b40f
 
 /*
  * ------------------------------------------------------

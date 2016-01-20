@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Upgrading from 2.2.x to 3.0.x &mdash; CodeIgniter 3.0.2 documentation</title>
+  <title>Upgrading from 2.2.x to 3.0.x &mdash; CodeIgniter 3.0.3 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.2 documentation" href="../index.html"/>
+    <link rel="top" title="CodeIgniter 3.0.3 documentation" href="../index.html"/>
         <link rel="up" title="Upgrading From a Previous Version" href="upgrading.html"/>
         <link rel="next" title="Upgrading from 2.2.2 to 2.2.3" href="upgrade_223.html"/>
         <link rel="prev" title="Upgrading from 3.0.0 to 3.0.1" href="upgrade_301.html"/> 
@@ -839,8 +839,46 @@ Therefore you&#8217;re encouraged to update its usage sooner rather than
 later.</p>
 </div>
 </div>
-<div class="section" id="step-19-remove-usage-of-previously-deprecated-functionalities">
-<h2>Step 19: Remove usage of (previously) deprecated functionalities<a class="headerlink" href="#step-19-remove-usage-of-previously-deprecated-functionalities" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="step-19-make-sure-your-base-url-config-value-is-not-empty">
+<h2>Step 19: Make sure your &#8216;base_url&#8217; config value is not empty<a class="headerlink" href="#step-19-make-sure-your-base-url-config-value-is-not-empty" title="Permalink to this headline">¶</a></h2>
+<p>When <tt class="docutils literal"><span class="pre">$config['base_url']</span></tt> is not set, CodeIgniter tries to automatically
+detect what your website&#8217;s base URL is. This is done purely for convenience
+when you are starting development of a new application.</p>
+<p>Auto-detection is never reliable and also has security implications, which
+is why you should <strong>always</strong> have it manually configured!</p>
+<p>One of the changes in CodeIgniter 3.0.3 is how this auto-detection works,
+and more specifically it now falls back to the server&#8217;s IP address instead
+of the hostname requested by the client. Therefore, if you&#8217;ve ever relied
+on auto-detection, it will change how your website works now.</p>
+<p>In case you need to allow e.g. multiple domains, or both <a class="reference external" href="http://">http://</a> and
+<a class="reference external" href="https://">https://</a> prefixes to be dynamically used depending on the request,
+remember that <em>application/config/config.php</em> is still a PHP script, in
+which you can create this logic with a few lines of code. For example:</p>
+<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$allowed_domains</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;domain1.tld&#39;</span><span class="p">,</span> <span class="s1">&#39;domain2.tld&#39;</span><span class="p">);</span>
+<span class="nv">$default_domain</span>  <span class="o">=</span> <span class="s1">&#39;domain1.tld&#39;</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nb">in_array</span><span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;HTTP_HOST&#39;</span><span class="p">],</span> <span class="nv">$allowed_domains</span><span class="p">,</span> <span class="k">TRUE</span><span class="p">))</span>
+<span class="p">{</span>
+        <span class="nv">$domain</span> <span class="o">=</span> <span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;HTTP_HOST&#39;</span><span class="p">];</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+        <span class="nv">$domain</span> <span class="o">=</span> <span class="nv">$default_domain</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span> <span class="o">!</span> <span class="k">empty</span><span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;HTTPS&#39;</span><span class="p">]))</span>
+<span class="p">{</span>
+        <span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;base_url&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://&#39;</span><span class="o">.</span><span class="nv">$domain</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+        <span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;base_url&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;http://&#39;</span><span class="o">.</span><span class="nv">$domain</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="step-20-remove-usage-of-previously-deprecated-functionalities">
+<h2>Step 20: Remove usage of (previously) deprecated functionalities<a class="headerlink" href="#step-20-remove-usage-of-previously-deprecated-functionalities" title="Permalink to this headline">¶</a></h2>
 <p>In addition to the <tt class="docutils literal"><span class="pre">$autoload['core']</span></tt> configuration setting, there&#8217;s a
 number of other functionalities that have been removed in CodeIgniter 3.0.0:</p>
 <div class="section" id="the-sha1-library">
@@ -1224,7 +1262,7 @@ in order to avoid backwards compatibility with old browsers:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 08, 2015.
+      Last updated on Oct 31, 2015.
     </p>
   </div>
 
@@ -1245,7 +1283,7 @@ in order to avoid backwards compatibility with old browsers:</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'3.0.2',
+            VERSION:'3.0.3',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  false
