@@ -1,11 +1,12 @@
 # Starter project for CodeIgniter base web site template
 
-V 1.1.0
+V 1.2.0
 
 This is a bare bones set up for a website using Codeigniter and HTML5 boilerplate. Contains a simple controller for a static site.
 
 ## Contains
 * Bourbon http://http://bourbon.io/, Bitters http://bitters.bourbon.io/ and Neat http://neat.bourbon.io/.
+* Browser Sync https://www.browsersync.io/
 * Codeigniter 3 http://www.codeigniter.com
 * Compass  http://compass-style.org
 * HTML5 Boilerplate https://html5boilerplate.com/
@@ -23,6 +24,10 @@ This template uses Bourbon http://http://bourbon.io/, Bitters http://bitters.bou
 * Added some extra variables in /assets/base/_variables.scss for headings.
 * Added heading size variables to /assets/base/_typography.scss
 * Commented out resets in /assets/base/_lists.scss
+
+### Browser Sync
+
+Browser sync to reload browser after any changes to CSS.
 
 ### Codeigniter
 
@@ -45,6 +50,7 @@ Used as a starter for the html template
 * Compiles SASS
 * Adds browser prefixes.
 * Compresses image files and places them in assets/build/images folder.
+* Outputs display using browsersync
 
 
 ### Modernizr
