@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>URI Routing &mdash; CodeIgniter 3.0.3 documentation</title>
+  <title>URI Routing &mdash; CodeIgniter 3.0.5 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3 documentation" href="../index.html"/>
+    <link rel="top" title="CodeIgniter 3.0.5 documentation" href="../index.html"/>
         <link rel="up" title="General Topics" href="index.html"/>
         <link rel="next" title="Error Handling" href="errors.html"/>
         <link rel="prev" title="Compatibility Functions" href="compatibility_functions.html"/> 
@@ -530,17 +530,21 @@ rather than the double backslash syntax.</p>
 </div>
 <p>In the above example, a URI similar to products/shirts/123 would instead
 call the &#8220;shirts&#8221; controller class and the &#8220;id_123&#8221; method.</p>
-<p>With regular expressions, you can also catch a segment containing a
-forward slash (&#8216;/&#8217;), which would usually represent the delimiter between
-multiple segments.</p>
-<p>For example, if a user accesses a password protected area of your web
+<p>With regular expressions, you can also catch multiple segments at once.
+For example, if a user accesses a password protected area of your web
 application and you wish to be able to redirect them back to the same
 page after they log in, you may find this example useful:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;login/(.+)&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;auth/login/$1&#39;</span><span class="p">;</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">In the above example, if the <tt class="docutils literal"><span class="pre">$1</span></tt> placeholder contains a
+slash, it will still be split into multiple parameters when
+passed to <tt class="docutils literal"><span class="pre">Auth::login()</span></tt>.</p>
+</div>
 <p>For those of you who don&#8217;t know regular expressions and want to learn
-more about them, <cite>regular-expressions.info &lt;http://www.regular-expressions.info/&gt;</cite>
+more about them, <a class="reference external" href="http://www.regular-expressions.info/">regular-expressions.info</a>
 might be a good starting point.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -639,8 +643,8 @@ regular expression routes.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 31, 2015.
+        &copy; Copyright 2014 - 2016, British Columbia Institute of Technology.
+      Last updated on Mar 11, 2016.
     </p>
   </div>
 
@@ -661,7 +665,7 @@ regular expression routes.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'3.0.3',
+            VERSION:'3.0.5',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  false

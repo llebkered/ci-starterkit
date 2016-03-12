@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Upgrading from 2.2.x to 3.0.x &mdash; CodeIgniter 3.0.3 documentation</title>
+  <title>Upgrading from 2.2.x to 3.0.x &mdash; CodeIgniter 3.0.5 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3 documentation" href="../index.html"/>
+    <link rel="top" title="CodeIgniter 3.0.5 documentation" href="../index.html"/>
         <link rel="up" title="Upgrading From a Previous Version" href="upgrading.html"/>
         <link rel="next" title="Upgrading from 2.2.2 to 2.2.3" href="upgrade_223.html"/>
         <link rel="prev" title="Upgrading from 3.0.0 to 3.0.1" href="upgrade_301.html"/> 
@@ -479,7 +479,7 @@ in lowercase.</p>
 <div class="section" id="step-3-replace-config-mimes-php">
 <h2>Step 3: Replace config/mimes.php<a class="headerlink" href="#step-3-replace-config-mimes-php" title="Permalink to this headline">¶</a></h2>
 <p>This config file has been updated to contain more user mime-types, please copy
-it to _application/config/mimes.php*.</p>
+it to <em>application/config/mimes.php</em>.</p>
 </div>
 <div class="section" id="step-4-remove-autoload-core-from-your-config-autoload-php">
 <h2>Step 4: Remove $autoload[&#8216;core&#8217;] from your config/autoload.php<a class="headerlink" href="#step-4-remove-autoload-core-from-your-config-autoload-php" title="Permalink to this headline">¶</a></h2>
@@ -603,11 +603,11 @@ variable to <tt class="docutils literal"><span class="pre">$query_builder</span>
 <div class="section" id="step-8-replace-your-error-templates">
 <h2>Step 8: Replace your error templates<a class="headerlink" href="#step-8-replace-your-error-templates" title="Permalink to this headline">¶</a></h2>
 <p>In CodeIgniter 3.0, the error templates are now considered as views and have been moved to the
-_application/views/errors* directory.</p>
+<em>application/views/errors</em> directory.</p>
 <p>Furthermore, we&#8217;ve added support for CLI error templates in plain-text format that unlike HTML,
 is suitable for the command line. This of course requires another level of separation.</p>
-<p>It is safe to move your old templates from _application/errors* to _application/views/errors/html*,
-but you&#8217;ll have to copy the new _application/views/errors/cli* directory from the CodeIgniter archive.</p>
+<p>It is safe to move your old templates from <em>application/errors</em> to <em>application/views/errors/html</em>,
+but you&#8217;ll have to copy the new <em>application/views/errors/cli</em> directory from the CodeIgniter archive.</p>
 </div>
 <div class="section" id="step-9-update-your-config-routes-php-file">
 <h2>Step 9: Update your config/routes.php file<a class="headerlink" href="#step-9-update-your-config-routes-php-file" title="Permalink to this headline">¶</a></h2>
@@ -720,7 +720,7 @@ to FALSE, then this change doesn&#8217;t concern you.</p>
 <li>input-&gt;input_stream()</li>
 </ul>
 </li>
-<li><a class="reference internal" href="../helpers/cookie_helper.html"><em>Cookie Helper</em></a> <tt class="xref php php-func docutils literal"><span class="pre">get_cookie()</span></tt></li>
+<li><a class="reference internal" href="../helpers/cookie_helper.html"><em>Cookie Helper</em></a> <a class="reference internal" href="../helpers/cookie_helper.html#get_cookie" title="get_cookie"><tt class="xref php php-func docutils literal"><span class="pre">get_cookie()</span></tt></a></li>
 </ul>
 </div></blockquote>
 <div class="admonition important">
@@ -1225,8 +1225,8 @@ sooner rather than later.</p>
 </div>
 </div>
 </div>
-<div class="section" id="step-20-check-your-usage-of-text-helper-highlight-phrase">
-<h2>Step 20: Check your usage of Text helper highlight_phrase()<a class="headerlink" href="#step-20-check-your-usage-of-text-helper-highlight-phrase" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="step-21-check-your-usage-of-text-helper-highlight-phrase">
+<h2>Step 21: Check your usage of Text helper highlight_phrase()<a class="headerlink" href="#step-21-check-your-usage-of-text-helper-highlight-phrase" title="Permalink to this headline">¶</a></h2>
 <p>The default HTML tag used by <a class="reference internal" href="../helpers/text_helper.html"><em>Text Helper</em></a> function
 <tt class="xref py py-func docutils literal"><span class="pre">highlight_phrase()</span></tt> has been changed from <tt class="docutils literal"><span class="pre">&lt;strong&gt;</span></tt> to the new HTML5
 tag <tt class="docutils literal"><span class="pre">&lt;mark&gt;</span></tt>.</p>
@@ -1261,8 +1261,8 @@ in order to avoid backwards compatibility with old browsers:</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 31, 2015.
+        &copy; Copyright 2014 - 2016, British Columbia Institute of Technology.
+      Last updated on Mar 11, 2016.
     </p>
   </div>
 
@@ -1283,7 +1283,7 @@ in order to avoid backwards compatibility with old browsers:</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'3.0.3',
+            VERSION:'3.0.5',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  false

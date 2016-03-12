@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Form Helper &mdash; CodeIgniter 3.0.3 documentation</title>
+  <title>Form Helper &mdash; CodeIgniter 3.0.5 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3 documentation" href="../index.html"/>
+    <link rel="top" title="CodeIgniter 3.0.5 documentation" href="../index.html"/>
         <link rel="up" title="Helpers" href="index.html"/>
         <link rel="next" title="HTML Helper" href="html_helper.html"/>
         <link rel="prev" title="File Helper" href="file_helper.html"/> 
@@ -543,8 +543,8 @@ third parameter, like this:</p>
 </dd></dl>
 
 <dl class="function">
-<dt>
-<tt class="descname">form_open_multipart([$action = ''[, $attributes = array()[, $hidden = array()]])</tt></dt>
+<dt id="form_open_multipart">
+<tt class="descname">form_open_multipart</tt><big>(</big><span class="optional">[</span><em>$action = ''</em><span class="optional">[</span>, <em>$attributes = array()</em><span class="optional">[</span>, <em>$hidden = array()</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><big>)</big><a class="headerlink" href="#form_open_multipart" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -652,8 +652,8 @@ name/value string to create one field:</p>
 </dd></dl>
 
 <dl class="function">
-<dt>
-<tt class="descname">form_input([$data = ''[, $value = ''[, $extra = '']])</tt></dt>
+<dt id="form_input">
+<tt class="descname">form_input</tt><big>(</big><span class="optional">[</span><em>$data = ''</em><span class="optional">[</span>, <em>$value = ''</em><span class="optional">[</span>, <em>$extra = ''</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><big>)</big><a class="headerlink" href="#form_input" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -733,7 +733,7 @@ JavaScript, you can pass it as a string in the third parameter:</p>
 </tr>
 </tbody>
 </table>
-<p>This function is identical in all respects to the <tt class="xref php php-func docutils literal"><span class="pre">form_input()</span></tt>
+<p>This function is identical in all respects to the <a class="reference internal" href="#form_input" title="form_input"><tt class="xref php php-func docutils literal"><span class="pre">form_input()</span></tt></a>
 function above except that it uses the &#8220;password&#8221; input type.</p>
 </dd></dl>
 
@@ -759,7 +759,7 @@ function above except that it uses the &#8220;password&#8221; input type.</p>
 </tr>
 </tbody>
 </table>
-<p>This function is identical in all respects to the <tt class="xref php php-func docutils literal"><span class="pre">form_input()</span></tt>
+<p>This function is identical in all respects to the <a class="reference internal" href="#form_input" title="form_input"><tt class="xref php php-func docutils literal"><span class="pre">form_input()</span></tt></a>
 function above except that it uses the &#8220;file&#8221; input type, allowing it to
 be used to upload files.</p>
 </dd></dl>
@@ -786,7 +786,7 @@ be used to upload files.</p>
 </tr>
 </tbody>
 </table>
-<p>This function is identical in all respects to the <tt class="xref php php-func docutils literal"><span class="pre">form_input()</span></tt>
+<p>This function is identical in all respects to the <a class="reference internal" href="#form_input" title="form_input"><tt class="xref php php-func docutils literal"><span class="pre">form_input()</span></tt></a>
 function above except that it generates a &#8220;textarea&#8221; type.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -1050,12 +1050,12 @@ array of attributes to the function:</p>
 additional data like JavaScript, you can pass it as a string in the
 fourth parameter:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$js</span> <span class="o">=</span> <span class="s1">&#39;onClick=&quot;some_function()&quot;&#39;</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nx">form_checkbox</span><span class="p">(</span><span class="s1">&#39;newsletter&#39;</span><span class="p">,</span> <span class="s1">&#39;accept&#39;</span><span class="p">,</span> <span class="k">TRUE</span><span class="p">,</span> <span class="nv">$js</span><span class="p">)</span>
+<span class="k">echo</span> <span class="nx">form_checkbox</span><span class="p">(</span><span class="s1">&#39;newsletter&#39;</span><span class="p">,</span> <span class="s1">&#39;accept&#39;</span><span class="p">,</span> <span class="k">TRUE</span><span class="p">,</span> <span class="nv">$js</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Or you can pass it as an array:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$js</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;onClick&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;some_function();&#39;</span><span class="p">);</span>
-<span class="k">echo</span> <span class="nx">form_checkbox</span><span class="p">(</span><span class="s1">&#39;newsletter&#39;</span><span class="p">,</span> <span class="s1">&#39;accept&#39;</span><span class="p">,</span> <span class="k">TRUE</span><span class="p">,</span> <span class="nv">$js</span><span class="p">)</span>
+<span class="k">echo</span> <span class="nx">form_checkbox</span><span class="p">(</span><span class="s1">&#39;newsletter&#39;</span><span class="p">,</span> <span class="s1">&#39;accept&#39;</span><span class="p">,</span> <span class="k">TRUE</span><span class="p">,</span> <span class="nv">$js</span><span class="p">);</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -1293,7 +1293,7 @@ supply the field name via the first parameter of the function. The
 second (optional) parameter allows you to set a default value for the
 form. The third (optional) parameter allows you to turn off HTML escaping
 of the value, in case you need to use this function in combination with
-i.e. <tt class="xref php php-func docutils literal"><span class="pre">form_input()</span></tt> and avoid double-escaping.</p>
+i.e. <a class="reference internal" href="#form_input" title="form_input"><tt class="xref php php-func docutils literal"><span class="pre">form_input()</span></tt></a> and avoid double-escaping.</p>
 <p>Example:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&quot;quantity&quot;</span> <span class="nx">value</span><span class="o">=</span><span class="s2">&quot;&lt;?php echo set_value(&#39;quantity&#39;, &#39;0&#39;); ?&gt;&quot;</span> <span class="nx">size</span><span class="o">=</span><span class="s2">&quot;50&quot;</span> <span class="o">/&gt;</span>
 </pre></div>
@@ -1547,8 +1547,8 @@ function. Use it only if you are creating your own form elements.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 31, 2015.
+        &copy; Copyright 2014 - 2016, British Columbia Institute of Technology.
+      Last updated on Mar 11, 2016.
     </p>
   </div>
 
@@ -1569,7 +1569,7 @@ function. Use it only if you are creating your own form elements.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'3.0.3',
+            VERSION:'3.0.5',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  false

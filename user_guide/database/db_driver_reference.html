@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>DB Driver Reference &mdash; CodeIgniter 3.0.3 documentation</title>
+  <title>DB Driver Reference &mdash; CodeIgniter 3.0.5 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3 documentation" href="../index.html"/>
+    <link rel="top" title="CodeIgniter 3.0.5 documentation" href="../index.html"/>
         <link rel="up" title="Database Reference" href="index.html"/>
         <link rel="next" title="Tutorial" href="../tutorial/index.html"/>
         <link rel="prev" title="Database Utility Class" href="utilities.html"/> 
@@ -602,8 +602,8 @@ server&#8217;s idle timeout.</p>
 </dd></dl>
 
 <dl class="method">
-<dt>
-<tt class="descname">query($sql[, $binds = FALSE[, $return_object = NULL]]])</tt></dt>
+<dt id="CI_DB_driver::query">
+<tt class="descname">query</tt><big>(</big><em>$sql</em><span class="optional">[</span>, <em>$binds = FALSE</em><span class="optional">[</span>, <em>$return_object = NULL</em><span class="optional">]</span><span class="optional">]</span><big>)</big><a class="headerlink" href="#CI_DB_driver::query" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -938,6 +938,14 @@ around them.</p>
 <p>Similar to <tt class="docutils literal"><span class="pre">escape_str()</span></tt>, but will also escape the <tt class="docutils literal"><span class="pre">%</span></tt>
 and <tt class="docutils literal"><span class="pre">_</span></tt> wildcard characters, so that they don&#8217;t cause
 false-positives in LIKE conditions.</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">The <tt class="docutils literal"><span class="pre">escape_like_str()</span></tt> method uses &#8216;!&#8217; (exclamation mark)
+to escape special characters for <em>LIKE</em> conditions. Because this
+method escapes partial strings that you would wrap in quotes
+yourself, it cannot automatically add the <tt class="docutils literal"><span class="pre">ESCAPE</span> <span class="pre">'!'</span></tt>
+condition for you, and so you&#8217;ll have to manually do that.</p>
+</div>
 </dd></dl>
 
 <dl class="method">
@@ -1406,8 +1414,8 @@ position, and escape only the correct identifiers.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 31, 2015.
+        &copy; Copyright 2014 - 2016, British Columbia Institute of Technology.
+      Last updated on Mar 11, 2016.
     </p>
   </div>
 
@@ -1428,7 +1436,7 @@ position, and escape only the correct identifiers.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'3.0.3',
+            VERSION:'3.0.5',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  false
