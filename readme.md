@@ -1,6 +1,6 @@
 # Starter project for CodeIgniter base web site template
 
-V 1.1.0
+V 1.1.1
 
 This is a bare bones set up for a website using Codeigniter and HTML5 boilerplate. Contains a simple controller for a static site.
 

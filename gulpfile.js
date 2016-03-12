@@ -19,7 +19,8 @@ var svgfallback = require('gulp-svgfallback');
 // Javascript
 
 
-
+// Browser Sync
+var browserSync = require('browser-sync').create();
 
 /*
 CSS
@@ -104,6 +105,14 @@ gulp.task('svgfallback', function () {
         .pipe(gulp.dest('assets/build/images/png'));
 });
 
+
+// Broswer Sync
+// see https://www.browsersync.io/docs/gulp/
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        proxy: "yourlocal.dev"
+    });
+});
 
 /* ================= */
 /* Gulp Watch */
