@@ -2,6 +2,7 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var watch = require('gulp-watch');
+var browserSync = require('browser-sync').create();
 
 // CSS
 var sass = require('gulp-sass');
@@ -58,7 +59,8 @@ gulp.task('sass', function() {
     }))
     // Minify CSS
     .pipe(csso())
-    .pipe(gulp.dest('assets/css'));
+    .pipe(gulp.dest('assets/css'))
+    .pipe(browserSync.stream());
 });
 
 
@@ -91,7 +93,7 @@ gulp.task('svgstore', function () {
                         minify: true
                     }
                 }]
-            }
+            };
         }))
         .pipe(svgstore({ inlineSvg: true }))
         .pipe(gulp.dest('assets/build/svg'));
@@ -115,6 +117,14 @@ gulp.task('browser-sync', function() {
 });
 
 /* ================= */
+/* browser-sync */
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        proxy: "ci-starterkit.dev"
+    });
+});
+
+/* ================= */
 /* Gulp Watch */
 
 gulp.task('watch', function() {
@@ -130,4 +140,4 @@ gulp.task('watch', function() {
   // place code for your default task here
 });
 */
-gulp.task('default', ['sass', 'images' , 'svgstore', 'svgfallback','watch']);
+gulp.task('default', ['sass', 'images' , 'svgstore', 'svgfallback', 'browser-sync','watch']);
