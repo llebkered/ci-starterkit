@@ -18,11 +18,15 @@ This is a bare bones set up for a website using Codeigniter and HTML5 boilerplat
 * Normalize.css  https://necolas.github.io/normalize.css/
 * SASS http://sass-lang.com/
 * SMACSS https://smacss.com/
+* Twig https://twig.sensiolabs.org/
 * Yarn http://yarnpkg.com/
 
 ### Bourbon, Neat and Bitters
 
 This template uses Bourbon http://http://bourbon.io/, Bitters http://bitters.bourbon.io/ and Neat http://neat.bourbon.io/ as a base for the SASS.
+
+Bourbon, Neat and Bitters are stored in node_modules
+
 
 * SASS files live in /assets/sass
 * Added some extra variables in /assets/base/_variables.scss for headings.
@@ -37,8 +41,6 @@ Browser sync to reload browser after any changes to CSS.
 
 There is a bare bones Codeigniter installation to handle the backend.
 
-* Moved views folder out to the top level and changed the name to public.
-* Pages class load header, content and footer views.
 
 
 ### Compass
@@ -90,11 +92,29 @@ application
 -- cache
 -- config
 -- controllers
+-- core
+-- helpers
+-- hooks
+-- languages
+-- libraries
+-- logs
+-- migrations
+-- models
+-- sql
+-- third_party
+-- views
 assets
+-- build
+-- css
+-- images
+-- js
+-- sass
+-- svgs
 index.php
 gulpfile.js
 node_modules
 package.json
 system
 vendor
+yarn.lock
 ```
