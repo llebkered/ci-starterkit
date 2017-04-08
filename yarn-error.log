@@ -1,0 +1,51 @@
+Arguments: 
+  /usr/local/Cellar/node/7.7.4/bin/node /usr/local/bin/yarn -version
+
+PATH: 
+  /usr/local/bin:/Users/derek/.rbenv/shims:/usr/local/sbin:/usr/local/mysql/bin:/Users/derek/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/Server.app/Contents/ServerRoot/usr/bin:/Applications/Server.app/Contents/ServerRoot/usr/sbin:/Users/derek/.rvm/bin:/Users/derek/.rvm/bin:/Users/derek/.composer/vendor/bin
+
+Yarn version: 
+  0.21.3
+
+Node version: 
+  7.7.4
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "gulptasks",
+    "version": "1.0.0",
+    "description": "Basic Gulp Setup",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Derek Bell",
+    "license": "MIT",
+    "devDependencies": {
+      "browser-sync": "^2.11.1",
+      "gulp": "^3.9.0",
+      "gulp-autoprefixer": "^2.3.1",
+      "gulp-csso": "^1.0.0",
+      "gulp-imagemin": "^2.3.0",
+      "gulp-sass": "^2.1.1",
+      "gulp-svgfallback": "^3.0.2",
+      "gulp-svgmin": "^1.2.0",
+      "gulp-svgstore": "^5.0.4",
+      "gulp-util": "^3.0.6",
+      "gulp-watch": "^4.3.4",
+      "imagemin-pngquant": "^4.1.2",
+      "path": "^0.11.14"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/Users/derek/Sites/ci-starterkit/node_modules/glob-stream/node_modules/glob-parent'
