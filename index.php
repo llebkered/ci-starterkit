@@ -128,7 +128,7 @@ switch (ENVIRONMENT)
  *
  * NO TRAILING SLASH!
  */
-	$view_folder = 'public';
+	$view_folder = '';
 
 
 /*
