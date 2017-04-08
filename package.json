@@ -22,5 +22,10 @@
     "gulp-watch": "^4.3.4",
     "imagemin-pngquant": "^4.1.2",
     "path": "^0.11.14"
+  },
+  "dependencies": {
+    "bourbon": "^4.3.4",
+    "bourbon-bitters": "^1.2.1",
+    "bourbon-neat": "^2.0.0"
   }
 }

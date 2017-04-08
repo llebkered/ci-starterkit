@@ -33,9 +33,12 @@
 // import third-party dependancies
 // ==========================================================================
 @import 'utilities/lib';
-@import "utilities/bourbon/bourbon";
-@import "utilities/bitters/base";
-@import "utilities/neat/neat";
+//@import "utilities/bourbon/bourbon";
+//@import "utilities/bitters/base";
+//@import "utilities/neat/neat";
+@import "./node_modules/bourbon/app/assets/stylesheets/bourbon";
+@import "./node_modules/bourbon-neat/core/_neat.scss";
+
 // ==========================================================================
 // $Base
 // ==========================================================================
