@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Compatibility Functions &mdash; CodeIgniter 3.0.6 documentation</title>
+  <title>Compatibility Functions &mdash; CodeIgniter 3.1.4 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.6 documentation" href="../index.html"/>
+    <link rel="top" title="CodeIgniter 3.1.4 documentation" href="../index.html"/>
         <link rel="up" title="General Topics" href="index.html"/>
         <link rel="next" title="URI Routing" href="routing.html"/>
         <link rel="prev" title="Common Functions" href="common_functions.html"/> 
@@ -433,7 +433,7 @@ set of dependencies on their own, but are still useful if your
 PHP setup doesn&#8217;t offer them natively.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Much like the <cite>common functions &lt;common_functions&gt;</cite>, the
+<p class="last">Much like the <a class="reference internal" href="common_functions.html"><em>common functions</em></a>, the
 compatibility functions are always available, as long as
 their dependencies are met.</p>
 </div>
@@ -819,61 +819,6 @@ array_column()</a>.</p>
 </dd></dl>
 
 <dl class="function">
-<dt id="array_replace">
-<tt class="descname">array_replace</tt><big>(</big><em>array $array1</em><span class="optional">[</span>, <em>...</em><span class="optional">]</span><big>)</big><a class="headerlink" href="#array_replace" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$array1</strong> (<em>array</em>) &#8211; Array in which to replace elements</li>
-<li><strong>...</strong> (<em>array</em>) &#8211; Array (or multiple ones) from which to extract elements</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Modified array</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array</p>
-</td>
-</tr>
-</tbody>
-</table>
-<p>For more information, please refer to the <a class="reference external" href="http://php.net/array_replace">PHP manual for
-array_replace()</a>.</p>
-</dd></dl>
-
-<dl class="function">
-<dt id="array_replace_recursive">
-<tt class="descname">array_replace_recursive</tt><big>(</big><em>array $array1</em><span class="optional">[</span>, <em>...</em><span class="optional">]</span><big>)</big><a class="headerlink" href="#array_replace_recursive" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$array1</strong> (<em>array</em>) &#8211; Array in which to replace elements</li>
-<li><strong>...</strong> (<em>array</em>) &#8211; Array (or multiple ones) from which to extract elements</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Modified array</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array</p>
-</td>
-</tr>
-</tbody>
-</table>
-<p>For more information, please refer to the <a class="reference external" href="http://php.net/array_replace_recursive">PHP manual for
-array_replace_recursive()</a>.</p>
-<div class="admonition important">
-<p class="first admonition-title">Important</p>
-<p class="last">Only PHP&#8217;s native function can detect endless recursion.
-Unless you are running PHP 5.3+, be careful with references!</p>
-</div>
-</dd></dl>
-
-<dl class="function">
 <dt id="hex2bin">
 <tt class="descname">hex2bin</tt><big>(</big><em>$data</em><big>)</big><a class="headerlink" href="#hex2bin" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
@@ -894,30 +839,6 @@ Unless you are running PHP 5.3+, be careful with references!</p>
 </tbody>
 </table>
 <p>For more information, please refer to the <a class="reference external" href="http://php.net/hex2bin">PHP manual for hex2bin()</a>.</p>
-</dd></dl>
-
-<dl class="function">
-<dt id="quoted_printable_encode">
-<tt class="descname">quoted_printable_encode</tt><big>(</big><em>$str</em><big>)</big><a class="headerlink" href="#quoted_printable_encode" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$str</strong> (<em>string</em>) &#8211; Input string</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">8bit-encoded string</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
-</td>
-</tr>
-</tbody>
-</table>
-<p>For more information, please refer to the <a class="reference external" href="http://php.net/quoted_printable_encode">PHP manual for
-quoted_printable_encode()</a>.</p>
 </dd></dl>
 
 </div>
@@ -942,8 +863,8 @@ quoted_printable_encode()</a>.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2014 - 2016, British Columbia Institute of Technology.
-      Last updated on Mar 21, 2016.
+        &copy; Copyright 2014 - 2017, British Columbia Institute of Technology.
+      Last updated on Mar 20, 2017.
     </p>
   </div>
 
@@ -964,7 +885,7 @@ quoted_printable_encode()</a>.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'3.0.6',
+            VERSION:'3.1.4',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  false

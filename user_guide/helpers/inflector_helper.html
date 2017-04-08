@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Inflector Helper &mdash; CodeIgniter 3.0.6 documentation</title>
+  <title>Inflector Helper &mdash; CodeIgniter 3.1.4 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.6 documentation" href="../index.html"/>
+    <link rel="top" title="CodeIgniter 3.1.4 documentation" href="../index.html"/>
         <link rel="up" title="Helpers" href="index.html"/>
         <link rel="next" title="Language Helper" href="language_helper.html"/>
         <link rel="prev" title="HTML Helper" href="html_helper.html"/> 
@@ -426,7 +426,7 @@
   <div class="section" id="inflector-helper">
 <h1>Inflector Helper<a class="headerlink" href="#inflector-helper" title="Permalink to this headline">¶</a></h1>
 <p>The Inflector Helper file contains functions that permits you to change
-words to plural, singular, camel case, etc.</p>
+<strong>English</strong> words to plural, singular, camel case, etc.</p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
 <li><a class="reference internal" href="#loading-this-helper" id="id1">Loading this Helper</a></li>
@@ -436,7 +436,7 @@ words to plural, singular, camel case, etc.</p>
 <div class="custom-index container"></div><div class="section" id="loading-this-helper">
 <h2><a class="toc-backref" href="#id1">Loading this Helper</a><a class="headerlink" href="#loading-this-helper" title="Permalink to this headline">¶</a></h2>
 <p>This helper is loaded using the following code:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;inflector&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;inflector&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
@@ -464,7 +464,7 @@ words to plural, singular, camel case, etc.</p>
 </tbody>
 </table>
 <p>Changes a plural word to singular. Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">echo</span> <span class="nx">singular</span><span class="p">(</span><span class="s1">&#39;dogs&#39;</span><span class="p">);</span> <span class="c1">// Prints &#39;dog&#39;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">echo</span> <span class="nx">singular</span><span class="p">(</span><span class="s1">&#39;dogs&#39;</span><span class="p">);</span> <span class="c1">// Prints &#39;dog&#39;</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -481,7 +481,7 @@ words to plural, singular, camel case, etc.</p>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A plular word</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A plural word</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -490,7 +490,7 @@ words to plural, singular, camel case, etc.</p>
 </tbody>
 </table>
 <p>Changes a singular word to plural. Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">echo</span> <span class="nx">plural</span><span class="p">(</span><span class="s1">&#39;dog&#39;</span><span class="p">);</span> <span class="c1">// Prints &#39;dogs&#39;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">echo</span> <span class="nx">plural</span><span class="p">(</span><span class="s1">&#39;dog&#39;</span><span class="p">);</span> <span class="c1">// Prints &#39;dogs&#39;</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -517,7 +517,7 @@ words to plural, singular, camel case, etc.</p>
 </table>
 <p>Changes a string of words separated by spaces or underscores to camel
 case. Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">echo</span> <span class="nx">camelize</span><span class="p">(</span><span class="s1">&#39;my_dog_spot&#39;</span><span class="p">);</span> <span class="c1">// Prints &#39;myDogSpot&#39;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">echo</span> <span class="nx">camelize</span><span class="p">(</span><span class="s1">&#39;my_dog_spot&#39;</span><span class="p">);</span> <span class="c1">// Prints &#39;myDogSpot&#39;</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -544,7 +544,7 @@ case. Example:</p>
 </table>
 <p>Takes multiple words separated by spaces and underscores them.
 Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">echo</span> <span class="nx">underscore</span><span class="p">(</span><span class="s1">&#39;my dog spot&#39;</span><span class="p">);</span> <span class="c1">// Prints &#39;my_dog_spot&#39;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">echo</span> <span class="nx">underscore</span><span class="p">(</span><span class="s1">&#39;my dog spot&#39;</span><span class="p">);</span> <span class="c1">// Prints &#39;my_dog_spot&#39;</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -573,11 +573,11 @@ Example:</p>
 <p>Takes multiple words separated by underscores and adds spaces between
 them. Each word is capitalized.</p>
 <p>Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">echo</span> <span class="nx">humanize</span><span class="p">(</span><span class="s1">&#39;my_dog_spot&#39;</span><span class="p">);</span> <span class="c1">// Prints &#39;My Dog Spot&#39;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">echo</span> <span class="nx">humanize</span><span class="p">(</span><span class="s1">&#39;my_dog_spot&#39;</span><span class="p">);</span> <span class="c1">// Prints &#39;My Dog Spot&#39;</span>
 </pre></div>
 </div>
 <p>To use dashes instead of underscores:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">echo</span> <span class="nx">humanize</span><span class="p">(</span><span class="s1">&#39;my-dog-spot&#39;</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">);</span> <span class="c1">// Prints &#39;My Dog Spot&#39;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">echo</span> <span class="nx">humanize</span><span class="p">(</span><span class="s1">&#39;my-dog-spot&#39;</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">);</span> <span class="c1">// Prints &#39;My Dog Spot&#39;</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -603,7 +603,7 @@ them. Each word is capitalized.</p>
 </tbody>
 </table>
 <p>Checks if the given word has a plural version. Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nx">is_countable</span><span class="p">(</span><span class="s1">&#39;equipment&#39;</span><span class="p">);</span> <span class="c1">// Returns FALSE</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nx">is_countable</span><span class="p">(</span><span class="s1">&#39;equipment&#39;</span><span class="p">);</span> <span class="c1">// Returns FALSE</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -629,8 +629,8 @@ them. Each word is capitalized.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2014 - 2016, British Columbia Institute of Technology.
-      Last updated on Mar 21, 2016.
+        &copy; Copyright 2014 - 2017, British Columbia Institute of Technology.
+      Last updated on Mar 20, 2017.
     </p>
   </div>
 
@@ -651,7 +651,7 @@ them. Each word is capitalized.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'3.0.6',
+            VERSION:'3.1.4',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  false

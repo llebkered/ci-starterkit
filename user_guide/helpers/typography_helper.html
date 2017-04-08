@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Typography Helper &mdash; CodeIgniter 3.0.6 documentation</title>
+  <title>Typography Helper &mdash; CodeIgniter 3.1.4 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.6 documentation" href="../index.html"/>
+    <link rel="top" title="CodeIgniter 3.1.4 documentation" href="../index.html"/>
         <link rel="up" title="Helpers" href="index.html"/>
         <link rel="next" title="URL Helper" href="url_helper.html"/>
         <link rel="prev" title="Text Helper" href="text_helper.html"/> 
@@ -436,7 +436,7 @@ in semantically relevant ways.</p>
 <div class="custom-index container"></div><div class="section" id="loading-this-helper">
 <h2><a class="toc-backref" href="#id1">Loading this Helper</a><a class="headerlink" href="#loading-this-helper" title="Permalink to this headline">¶</a></h2>
 <p>This helper is loaded using the following code:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;typography&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;typography&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
@@ -466,17 +466,17 @@ in semantically relevant ways.</p>
 </table>
 <p>Formats text so that it is semantically and typographically correct
 HTML.</p>
-<p>This function is an alias for <tt class="docutils literal"><span class="pre">CI_Typography::auto_typography</span></tt>.
+<p>This function is an alias for <tt class="docutils literal"><span class="pre">CI_Typography::auto_typography()</span></tt>.
 For more info, please see the <a class="reference internal" href="../libraries/typography.html"><em>Typography Library</em></a> documentation.</p>
 <p>Usage example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$string</span> <span class="o">=</span> <span class="nx">auto_typography</span><span class="p">(</span><span class="nv">$string</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$string</span> <span class="o">=</span> <span class="nx">auto_typography</span><span class="p">(</span><span class="nv">$string</span><span class="p">);</span>
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Typographic formatting can be processor intensive, particularly if
 you have a lot of content being formatted. If you choose to use this
-function you may want to consider <cite>caching &lt;../general/caching&gt;</cite> your
+function you may want to consider <a class="reference internal" href="../general/caching.html"><em>caching</em></a> your
 pages.</p>
 </div>
 </dd></dl>
@@ -505,7 +505,7 @@ pages.</p>
 This function is identical to the native PHP <tt class="docutils literal"><span class="pre">nl2br()</span></tt> function,
 except that it ignores &lt;pre&gt; tags.</p>
 <p>Usage example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$string</span> <span class="o">=</span> <span class="nx">nl2br_except_pre</span><span class="p">(</span><span class="nv">$string</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$string</span> <span class="o">=</span> <span class="nx">nl2br_except_pre</span><span class="p">(</span><span class="nv">$string</span><span class="p">);</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -556,8 +556,8 @@ Fore more info, please see the <a class="reference internal" href="../libraries/
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2014 - 2016, British Columbia Institute of Technology.
-      Last updated on Mar 21, 2016.
+        &copy; Copyright 2014 - 2017, British Columbia Institute of Technology.
+      Last updated on Mar 20, 2017.
     </p>
   </div>
 
@@ -578,7 +578,7 @@ Fore more info, please see the <a class="reference internal" href="../libraries/
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'3.0.6',
+            VERSION:'3.1.4',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  false

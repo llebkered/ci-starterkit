@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Security &mdash; CodeIgniter 3.0.6 documentation</title>
+  <title>Security &mdash; CodeIgniter 3.1.4 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.6 documentation" href="../index.html"/>
+    <link rel="top" title="CodeIgniter 3.1.4 documentation" href="../index.html"/>
         <link rel="up" title="General Topics" href="index.html"/>
         <link rel="next" title="PHP Style Guide" href="styleguide.html"/>
         <link rel="prev" title="Alternate PHP Syntax for View Files" href="alternative_php.html"/> 
@@ -539,11 +539,7 @@ password hashing in the first place.</p>
 <p>Only use strong password hashing algorithms like BCrypt, which is used
 in PHP&#8217;s own <a class="reference external" href="http://php.net/password">Password Hashing</a> functions.</p>
 <p>Please use them, even if you&#8217;re not running PHP 5.5+, CodeIgniter
-provides them for you as long as you&#8217;re running at least PHP version
-5.3.7 (and if you don&#8217;t meet that requirement - please, upgrade).</p>
-<p>If you&#8217;re one of the really unlucky people who can&#8217;t even upgrade to a
-more recent PHP version, use <cite>hash_pbkdf() &lt;http://php.net/hash_pbkdf2&gt;</cite>,
-which we also provide in our compatibility layer.</p>
+provides them for you.</p>
 </li>
 <li><p class="first">DO NOT ever display or send a password in plain-text format!</p>
 <p>Even to the password&#8217;s owner, if you need a &#8220;Forgotten password&#8221;
@@ -616,8 +612,8 @@ attacker.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2014 - 2016, British Columbia Institute of Technology.
-      Last updated on Mar 21, 2016.
+        &copy; Copyright 2014 - 2017, British Columbia Institute of Technology.
+      Last updated on Mar 20, 2017.
     </p>
   </div>
 
@@ -638,7 +634,7 @@ attacker.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'3.0.6',
+            VERSION:'3.1.4',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  false
