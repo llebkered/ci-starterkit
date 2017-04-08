@@ -34,6 +34,14 @@ class Public_Controller extends MY_Controller
     {
         parent::__construct();
         // if offline load offline page
+        /*
+        $config = [
+	        'paths' => ['/path/to/twig/templates', VIEWPATH],
+	        'cache' => '/path/to/twig/cache',
+        ];
+        */
+        $config = array();
+        $this->load->library('twig', $config);
 
     }
 }
