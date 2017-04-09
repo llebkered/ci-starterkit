@@ -87,8 +87,9 @@ Yarn is used to manage packages. See http://yarnpkg.com/ for installation instru
 
 ## Installation
 
-1. Copy files and extract
-2. Create cache directory and set permissions
+### 1 Copy files and extract
+
+### 2 Create cache directory and set permissions
 ```
 mkdir application/cache
 mkdir application/cache/twig
@@ -97,21 +98,25 @@ touch application/cache/twig/index.html
 chmod 777 application/cache
 chmod 777 application/cache/twig
 ```
-3. Install node modules
+### 3 Install node modules
+
 ```
 yarn -version
 ```
 
-4. Install composer packacges
+### 4 Install composer packages
+
 ```
 composer update
 ``
 
-5. Install Twig into Codeigniter
+### 5 Install Twig into Codeigniter
+
 ```
 php vendor/kenjis/codeigniter-ss-twig/install.php
 ```
-5. Update application/config/config.php
+
+### 6 Update application/config/config.php
 
 ## File Structure
 
