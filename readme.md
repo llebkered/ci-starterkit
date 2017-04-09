@@ -83,7 +83,35 @@ Added Twig templating
 
 
 ### Yarn
-Yarn is used to manage packages
+Yarn is used to manage packages. See http://yarnpkg.com/ for installation instrunctions.
+
+## Installation
+
+1. Copy files and extract
+2. Create cache directory and set permissions
+```
+mkdir application/cache
+mkdir application/cache/twig
+touch application/cache/index.html
+touch application/cache/twig/index.html
+chmod 777 application/cache
+chmod 777 application/cache/twig
+```
+3. Install node modules
+```
+yarn -version
+```
+
+4. Install composer packacges
+```
+composer update
+``
+
+5. Install Twig into Codeigniter
+```
+php vendor/kenjis/codeigniter-ss-twig/install.php
+```
+5. Update application/config/config.php
 
 ## File Structure
 
