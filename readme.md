@@ -108,7 +108,7 @@ yarn -version
 
 ```
 composer update
-``
+```
 
 ### 5 Install Twig into Codeigniter
 
@@ -116,7 +116,9 @@ composer update
 php vendor/kenjis/codeigniter-ss-twig/install.php
 ```
 
-### 6 Update application/config/config.php
+### 6 Update application/config/config.php and gulpfile.js
+
+Update these to reflect yoou new location.
 
 ## File Structure
 
