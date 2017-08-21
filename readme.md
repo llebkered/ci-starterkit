@@ -1,7 +1,7 @@
 # Starter project for CodeIgniter base web site template
 
 
-V 2.0.0
+V 2.0.1
 
 
 This is a bare bones set up for a website using Codeigniter and HTML5 boilerplate. Contains a simple controller for a static site.
@@ -59,6 +59,10 @@ Composer is set up for extra PHP pagackages
 ### HTML5 Boilerplate
 
 Used as a starter for the html template
+
+### Ion Auth
+
+Ben Edmonds' Ion Aut authentication library to keep the bad guys away from sensitive areas.
 
 ### Gulp.js
 
