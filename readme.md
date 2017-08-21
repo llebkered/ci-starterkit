@@ -7,12 +7,14 @@ V 2.0.0
 This is a bare bones set up for a website using Codeigniter and HTML5 boilerplate. Contains a simple controller for a static site.
 
 ## Contains
+* Avenirer's Codeigniter MY Model https://github.com/avenirer/CodeIgniter-MY_Model
 * Bourbon http://http://bourbon.io/, Bitters http://bitters.bourbon.io/ and Neat http://neat.bourbon.io/.
 * Browser Sync https://www.browsersync.io/
 * Codeigniter 3 http://www.codeigniter.com
 * Compass  http://compass-style.org
 * Composer https://getcomposer.org/
 * HTML5 Boilerplate https://html5boilerplate.com/
+* Ion Auth http://benedmunds.com/ion_auth/
 * Gulp.js http://gulpjs.com/
 * Modernizr http://modernizr.com/
 * Normalize.css  https://necolas.github.io/normalize.css/
@@ -20,6 +22,9 @@ This is a bare bones set up for a website using Codeigniter and HTML5 boilerplat
 * SMACSS https://smacss.com/
 * Twig https://twig.sensiolabs.org/
 * Yarn http://yarnpkg.com/
+
+### Avenirer's MY Model
+Avenirer's MY Model for CodeIgniter
 
 ### Bourbon, Neat and Bitters
 
