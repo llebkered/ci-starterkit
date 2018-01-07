@@ -1,7 +1,7 @@
 # Starter project for CodeIgniter base web site template
 
 
-V 2.0.1
+V 2.0.2
 
 
 This is a bare bones set up for a website using Codeigniter and HTML5 boilerplate. Contains a simple controller for a static site.
@@ -47,11 +47,6 @@ Browser sync to reload browser after any changes to CSS.
 There is a bare bones Codeigniter installation to handle the backend.
 
 
-
-### Compass
-
-The project has been initialised for Compass. Use it if you want. There is also a gulp.js set up.
-
 ### Composer
 
 Composer is set up for extra PHP pagackages
@@ -84,7 +79,7 @@ It uses normalize.css as the reset.
 You can use either Compass or Gulp to compile the SASS.
 
 ### SMACSS
-Based on Mina Markham's Sassy Starter
+Based on Mina Markham's old V1 Sassy Starter
 https://github.com/minamarkham/sassy-starter
 
 ### Twig
