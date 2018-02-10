@@ -7,12 +7,14 @@ V 2.1.1
 This is a bare bones set up for a website using Codeigniter and HTML5 boilerplate. Contains a simple controller for a static site.
 
 ## Contains
+
+* Avenirer's Codeigniter MY Model https://github.com/avenirer/CodeIgniter-MY_Model
 * Bourbon http://http://bourbon.io/, Bitters http://bitters.bourbon.io/ and Neat http://neat.bourbon.io/.
 * Browser Sync https://www.browsersync.io/
 * Codeigniter 3 http://www.codeigniter.com
-* Compass  http://compass-style.org
 * Composer https://getcomposer.org/
 * HTML5 Boilerplate https://html5boilerplate.com/
+* Ion Auth http://benedmunds.com/ion_auth/
 * Gulp.js http://gulpjs.com/
 * Modernizr http://modernizr.com/
 * Normalize.css  https://necolas.github.io/normalize.css/
@@ -20,6 +22,10 @@ This is a bare bones set up for a website using Codeigniter and HTML5 boilerplat
 * SMACSS https://smacss.com/
 * Twig https://twig.sensiolabs.org/
 * Yarn http://yarnpkg.com/
+
+### Avenirer's MY Model
+
+Avenirer's MY Model for CodeIgniter
 
 ### Bourbon, Neat and Bitters
 
@@ -42,11 +48,6 @@ Browser sync to reload browser after any changes to CSS.
 There is a bare bones Codeigniter installation to handle the backend.
 
 
-
-### Compass
-
-The project has been initialised for Compass. Use it if you want. There is also a gulp.js set up.
-
 ### Composer
 
 Composer is set up for extra PHP pagackages
@@ -54,6 +55,10 @@ Composer is set up for extra PHP pagackages
 ### HTML5 Boilerplate
 
 Used as a starter for the html template
+
+### Ion Auth
+
+Ben Edmonds' Ion Auth authentication library to keep the bad guys away from sensitive areas.
 
 ### Gulp.js
 
@@ -75,15 +80,49 @@ It uses normalize.css as the reset.
 You can use either Compass or Gulp to compile the SASS.
 
 ### SMACSS
-Based on Mina Markham's Sassy Starter
+Based on Mina Markham's old V1 Sassy Starter. She has a new version based on atomic design.
 https://github.com/minamarkham/sassy-starter
 
 ### Twig
 Added Twig templating
 
-
 ### Yarn
-Yarn is used to manage packages
+Yarn is used to manage packages. See http://yarnpkg.com/ for installation instrunctions.
+
+## Installation
+
+### 1 Copy files and extract
+
+### 2 Create cache directory and set permissions
+```
+mkdir application/cache
+mkdir application/cache/twig
+touch application/cache/index.html
+touch application/cache/twig/index.html
+chmod 777 application/cache
+chmod 777 application/cache/twig
+```
+### 3 Install node modules
+
+```
+yarn 
+```
+
+### 4 Install composer packages
+
+```
+composer update
+```
+
+### 5 Install Twig into Codeigniter
+
+```
+php vendor/kenjis/codeigniter-ss-twig/install.php
+```
+
+### 6 Update application/config/config.php and gulpfile.js
+
+Update these to reflect your new location.
 
 ## File Structure
 

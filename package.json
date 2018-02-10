@@ -9,8 +9,7 @@
   "author": "Derek Bell",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.11.1",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-csso": "^1.0.0",
     "gulp-imagemin": "^2.3.0",
@@ -26,6 +25,10 @@
   "dependencies": {
     "bourbon": "^4.3.4",
     "bourbon-bitters": "^1.2.1",
-    "bourbon-neat": "^2.0.0"
+    "bourbon-neat": "^2.0.0",
+    "browser-sync": "^2.11.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
   }
 }
