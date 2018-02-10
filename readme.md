@@ -16,6 +16,7 @@ This is a bare bones set up for a website using Codeigniter and HTML5 boilerplat
 * HTML5 Boilerplate https://html5boilerplate.com/
 * Ion Auth http://benedmunds.com/ion_auth/
 * Gulp.js http://gulpjs.com/
+* Kenjis Codeigniter Twig https://github.com/kenjis/codeigniter-ss-twig
 * Modernizr http://modernizr.com/
 * Normalize.css  https://necolas.github.io/normalize.css/
 * SASS http://sass-lang.com/
