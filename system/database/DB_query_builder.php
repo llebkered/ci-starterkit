@@ -1405,11 +1405,7 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 		// for selecting COUNT(*) ...
 		$qb_orderby       = $this->qb_orderby;
 		$qb_cache_orderby = $this->qb_cache_orderby;
-<<<<<<< HEAD
 		$this->qb_orderby = $this->qb_cache_orderby = array();
-=======
-		$this->qb_orderby = $this->qb_cache_orderby = NULL;
->>>>>>> 8f08637913f7776d36af3a3d305089ed6762ee4e
 
 		$result = ($this->qb_distinct === TRUE OR ! empty($this->qb_groupby) OR ! empty($this->qb_cache_groupby) OR $this->qb_limit OR $this->qb_offset)
 			? $this->query($this->_count_string.$this->protect_identifiers('numrows')."\nFROM (\n".$this->_compile_select()."\n) CI_count_all_results")
