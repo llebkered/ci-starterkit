@@ -1,7 +1,7 @@
 // Gulp & utilities
 var browserSync = require('browser-sync').create();
 var gulp = require('gulp');
-var gutil = require('gulp-util');
+// var gutil = require('gulp-util');
 var watch = require('gulp-watch');
 
 
