@@ -129,7 +129,7 @@ gulp.task('copyfiles', function () {
 // see https://www.browsersync.io/docs/gulp/
 gulp.task('browser-sync', function () {
     browserSync.init({
-        proxy: "ci-starterkit.dev"
+        proxy: "ci-starterkit.test"
     });
 });
 
