@@ -1,0 +1,49 @@
+version: "3"
+services:
+    #php web server
+    webphp:
+        image: edersondev/php5.5.9
+        ports:
+            - "80:80"
+        volumes:
+            - .:/var/www/html
+            
+    # database
+    mysql:
+        image: mysql:5.7
+        environment:
+            MYSQL_DATABASE: "database_name"
+            MYSQL_USER: "dbuser"
+            MYSQL_PASSWORD: "123"
+            MYSQL_ROOT_PASSWORD: "root"
+        ports:
+            - 3306:3306
+        volumes:
+            - data:/var/lib/mysql
+            # - ./volumes/data:/var/lib/mysql
+            - ./application/sql/backup.sql:/docker-entrypoint-initdb.d/backup.sql
+    
+    # phpmyadmin
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        environment:
+            PMA_ARBITRARY: 1
+            MYSQL_USER: dbuser
+            MYSQL_PASSWORD: 123
+            MYSQL_ROOT_PASSWORD: root
+        ports:
+            - "8081:80"
+        #  links:
+        #         # for mysql container
+        #         - "db:db"
+
+    # docker-compose run composer <command>    
+    composer:
+      image: painless/composer
+      volumes:
+        - .:/var/www/html
+      working_dir: /var/www/html
+
+volumes:
+    data:
+        driver: local
