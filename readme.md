@@ -1,7 +1,7 @@
 # Starter project for CodeIgniter base web site template
 
 
-V 2.1.3
+V 2.2.0
 
 
 This is a bare bones set up for a website using Codeigniter and HTML5 boilerplate. Contains a simple controller for a static site.
@@ -124,6 +124,10 @@ php vendor/kenjis/codeigniter-ss-twig/install.php
 ### 6 Update application/config/config.php and gulpfile.js
 
 Update these to reflect your new location.
+
+### 7 (Optional) Bring up Docker containers
+
+``` docker-compose up -d ```
 
 ## File Structure
 
