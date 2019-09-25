@@ -1,7 +1,7 @@
 # Starter project for CodeIgniter base web site template
 
 
-V 2.2.0
+V 2.2.1
 
 
 This is a bare bones set up for a website using Codeigniter and HTML5 boilerplate. Contains a simple controller for a static site.
@@ -53,6 +53,14 @@ There is a bare bones Codeigniter installation to handle the backend.
 
 Composer is set up for extra PHP pagackages
 
+### Docker
+
+There is a Docker set up for an **old version** of PHP (5.5.9). This version is no longer supported and should not be used for production. 
+
+**It is advisable to replace this with a more modern PHP 7 implementation.**
+
+* https://www.php.net/eol.php
+
 ### HTML5 Boilerplate
 
 Used as a starter for the html template
@@ -63,10 +71,14 @@ Ben Edmonds' Ion Auth authentication library to keep the bad guys away from sens
 
 ### Gulp.js
 
+This still uses Gulp 3. Gulp 4 is the latest stable version. Upgrading to Gulp 4 requires a rewrite of *gulpfile.js*
+
 * Compiles SASS
 * Adds browser prefixes.
 * Compresses image files and places them in assets/build/images folder.
 * Outputs display using browsersync
+
+
 
 
 ### Modernizr
@@ -78,7 +90,7 @@ The same version that comes with HTML5 Boilerplate. You may want to get a custom
 It uses normalize.css as the reset.
 
 ### SASS
-You can use either Compass or Gulp to compile the SASS.
+You can use Gulp to compile the SASS.
 
 ### SMACSS
 Based on Mina Markham's old V1 Sassy Starter. She has a new version based on atomic design.
